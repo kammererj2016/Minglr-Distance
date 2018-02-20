@@ -50,8 +50,9 @@ function main() {
 		$(this).next().slideToggle(400);
 	});
 	$("#go-to").on("click", function() {
+		$("#time-lapse").fadeIn(1000);
 		$(".main").hide();
-		alert("A week later.");
+		$("#time-lapse").delay(3000).fadeOut(1000);
 		$("#friends-feed-2").show();
 		$(".event").hide();
 		$(".event2").show();
